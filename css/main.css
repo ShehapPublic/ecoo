@@ -108,6 +108,18 @@ p{
   background-color: var(--Secondary-color);
   z-index: 92212554454554541212;
 }
+.navbar .cart_icon button{
+  color: aliceblue;
+  background-color: transparent;
+  border: none;
+  margin-right: 35px;
+}
+.navbar .cart_icon button svg{
+  font-size: 25px;
+}
+.navbar .cart_icon .start-100{
+  left: 90% !important;
+}
 .navbar select{
   display: inline-block;
   width: 100px;
