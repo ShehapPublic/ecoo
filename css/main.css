@@ -99,7 +99,7 @@ p{
 }
 /* navbar */
 .navbar {
-  height: 75px;
+  height: 80px;
   width: 100%;
   background-color: transparent;
   padding: 0 5%;  
@@ -108,12 +108,17 @@ p{
   background-color: var(--Secondary-color);
   z-index: 92212554454554541212;
 }
-
-.navbar  .nav-header {
-  width: 20%;
-
+.navbar select{
+  display: inline-block;
+  width: 100px;
+  background-color: #F4EAE0;
+  color: var(--btnColor) !important;
+  font-weight: 800 !important;
 }
-
+.navbar select option{
+  color: var(--btnColor) !important;
+  font-weight: 800;
+}
 .navbar  .nav-header  .nav-logo {
   display: inline-block;
   font-size: 22px;
@@ -121,9 +126,8 @@ p{
 }
 
 .navbar .nav-logo img {
-  width: 154px  !important;
+  width: 84px  !important;
 }
-
 .navbar .nav-btn {
   display: none;
 }
@@ -133,9 +137,7 @@ p{
 .navbar  .nav-links {
   margin-left: auto;
   font-size: 20px;
-
 }
-
 .navbar  .nav-links  a , .navbar .nav-links li{
   display: inline-block;
   padding: 13px 10px 13px 10px;
@@ -320,8 +322,8 @@ p{
 .S1_home{
   width: 100%;
   height: 100vh;
-  background-image: url(../img/bgleft.jpg);
-  background-position: bottom;
+  background-image: url(../img/prand.jpeg);
+  background-position: center;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -334,10 +336,10 @@ p{
   text-align: center;
 }
 .S1_home_2{
-  background-image: url(../img/bgleft.jpg);
+  background-image: url(../img/P_7.jpg);
 }
 .S1_home_3 {
-  background-image: url(../img/bgleft.jpg);
+  background-image: url(../img/P_6.jpg);
 }
 .S1_home::after{
   content: '';
@@ -473,6 +475,7 @@ p{
 .Products .box img{
   margin: 20px 0;
   border-radius: 5px;
+  height: 300px;
 }
 .Products .box h4 a{
   color: var(--Secondary-color) ;
@@ -1131,18 +1134,22 @@ background-color: #000 !important;
 /* blog */
 .blog {
   padding: 70px 0;
+  position: relative;
 }
 
 .blog .box {
-  padding: 30px;
+  padding: 10px;
   border-radius: 5px;
 }
 
 .blog .box .images img {
   margin-bottom: 20px;
   border-radius: 30px !important;
+  height: 350px;
 }
-
+.S_blog .box .images img {
+  height: 100%;
+}
 .blog .box span img {
   width: 20px;
   height: 20px;
@@ -1192,12 +1199,17 @@ background-color: #000 !important;
   justify-content: space-between;
   margin: 20px 0;
 }
-
+.blog .catt{
+  position: sticky;
+  top: 0;
+}
+.blog .ssaafvvvx{
+  position: relative;
+}
 .blog .catt ul {
   flex-direction: column;
-
 }
-
+  
 .more_blog ul {
   align-items: center;
 }
@@ -1300,8 +1312,8 @@ background-color: #000 !important;
   width: 100%;
   height: 450px;
   background-attachment: fixed;
-  background-image: url(../img/bgleft.jpg);
-  background-position: center;
+  background-image: url(../img/BANER.jpg);
+  background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -1536,10 +1548,86 @@ background-color: #000 !important;
 .card_Special h3 a:hover{
   color: var(--Secondary-color);
 }
+/* Cart */
+.cart {
+  padding: 70px 0;
+}
+.cart img {
+  width: 100px !important;
+}
+.cart .Qunte {
+  display: flex;
+}
+.cart .Qunte button {
+  padding: 5px;
+  background-color: var(--btnColor);
+  border: none;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+.cart_page_contant {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: var(--main_borderColor);
+  border-color: #000;
+}
+ .cart_page_contant img{
+  padding: 10px 0 !important;
+  border-radius: 20px;
+}
+.cart_page_contant button {
+  background-color: var(--btnColor);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  width: 50px;
+}
 
+.cart_total_contant {
+  border: var(--main_borderColor);
+  padding: 10px;
+  margin-bottom: 25px;
+  border-color: #000;
 
+}
 
+.cart_total_contant h3 {
+  margin-bottom: 30px;
+}
 
+.cart_total_contant h4 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.cart_total_contant h5 {
+  font-size: 16px;
+
+}
+
+.supTotal {
+  padding: 70px 0;
+  background-color: var(--bgColor);
+}
+
+.supTotal h3 {
+  margin-bottom: 20px;
+  color: var(--textColor);
+}
+
+.supTotal a {
+  background-color: var(--btnColor);
+  color: var(--main_bgColor);
+  padding: 10px 30px;
+  border-radius: 5px;
+
+}
+
+.supTotal table {
+  margin-bottom: 40px;
+}
 
 
 
@@ -1606,6 +1694,7 @@ h3 , h2{
   }
 
   .S5_home .owl-nav .owl-prev,
+  
   .S5_home .owl-nav .owl-next {
     top: auto !important;
     bottom: auto !important;
